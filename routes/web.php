@@ -20,6 +20,8 @@ Deixa que  o amor encontre a gente
  D7(9) F#maj7 B
 
  https://paletadecolores.online/pt/vintage/
+
+ https://www.youtube.com/watch?v=BK52Rf_o-iY
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -33,7 +35,11 @@ Deixa que  o amor encontre a gente
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/diminuir', [ConexaoApiController::class, 'diminuir']);//envia a requisição com - 1
+Route::post('/aumentar', [ConexaoApiController::class, 'aumentar']);//envia a requisição com + 1
+
 */
 
 Route::get('/', ColeAquiController::class);//chama __invoke(), que chama a página inicial.
-Route::post('/recebetexto', ConexaoApiController::class)->name('enviaTexto');//chama __invoke(), que envia a requisição.
+Route::post('/enviar', ConexaoApiController::class)->name('enviar');//chama __invoke(), que envia a requisição.

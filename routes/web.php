@@ -18,6 +18,8 @@ Eu não quero ver você chorar
  Am7 D7(9) G7M F#7 Bm7
 Deixa que  o amor encontre a gente
  D7(9) F#maj7 B
+
+ https://paletadecolores.online/pt/vintage/
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------

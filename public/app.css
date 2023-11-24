@@ -20,9 +20,9 @@ h1 {
   width: 20vw;
 }
 
-#div_coleabaixo {
-  font-size: 0.2em;
-  align-items: center;
+.div_coleabaixo {
+  font-size: 0.7em;
+  /*align-items: center;*/
   justify-content: center;
   display: flex;
   /*background-color:red;*/
@@ -48,10 +48,10 @@ h1 {
   background-color:#94918f;
   border-color:#484441;
   align-items: center;
-  justify-content: center;
   display: flex;
   border-radius: 40px;
   border: solid;
+  justify-content: space-evenly;
 }
 
 #semiTons {
@@ -60,4 +60,53 @@ h1 {
 
 #but_alterar {
   border-radius: 40px;
+  width: 27vw;
+}
+
+#lab_semitons {
+  color: white;
+}
+
+#div_operacoes {
+  /*background-color:red;*/
+  height: 17vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#div_filha_operacoes {
+  width: 70vw;
+  height: 14vh;
+  background-color:#94918f;
+  border-color:#484441;
+  align-items: center;
+  display: flex;
+  border-radius: 40px;
+  border: solid;
+  justify-content: space-evenly;
+}
+
+#diminuir {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius:40px;
+  width: 27vw;
+}
+
+#aumentar {
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 27vw;
+}
+
+#aSeparar {
+  width: 90vw;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+}
+
+#div_text {
+  justify-content: center;
+  display: flex;
 }

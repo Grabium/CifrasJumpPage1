@@ -1,7 +1,7 @@
 @extends('top')
 @section('content')
 <div id="div_page">
-<div id="div_coleabaixo"><h2>Cole o texto abaixo</h2></div>
+
 
 
 <?php 
@@ -10,18 +10,27 @@
 
   <form action="{{ route('enviaTexto') }}" method='POST'>
   @csrf
-    <hr />
+
+
     <div id="div_alterar"><div id="div_filha_alterar">
       <input name="semiTons" id="semiTons" value={{ $semiTons }} />
       <label id="lab_semitons">0</label>
-      <button id="but_alterar"class="btn btn-danger" '>Alterar</button>
+      <button id="but_alterar" class="btn btn-danger" >Alterar</button>
     </div></div>
-    <hr />
-    <button id="diminuir" class="btn btn-danger" onclick="intervalo('-')">-</button>
-    <button id="aumentar" class="btn btn-danger" onclick='intervalo("+")'>+</button>
-    <!--button class="btn btn-danger" >Alterar</button-->
-    <br/><br/>
-    <textarea name="aSeparar" rows="40" cols="120" class="container-fluid -body-color"></textarea>
+
+    <div class="div_coleabaixo">Ajuste a quantidade em SEMI-TONS:</div>
+
+    <div id="div_operacoes"><div id="div_filha_operacoes">
+      <button id="diminuir" class="btn btn-danger" onclick="intervalo('-')">-</button>
+      <button id="aumentar" class="btn btn-danger" onclick='intervalo("+")'>+</button>
+    </div></div>
+
+    <div class="div_coleabaixo">Insira o texto no campo abaixo:</div>
+    
+
+    <div id="div_text">
+      <textarea id="aSeparar" name="aSeparar" rows="10" cols="120" class="container-fluid -body-color"></textarea>
+    </div>
   </form>
 </div><!-- page -->
 
